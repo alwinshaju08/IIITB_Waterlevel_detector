@@ -26,8 +26,7 @@ The liquid level sensor is equipped with an interface adapter that makes it comp
 
 # Block Diagram
 
-
-
+<img width="685" alt="Screenshot 2023-10-01 at 5 50 12 PM" src="https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/b8251533-a7e8-4ee4-914b-91b609c3363f">
 
 ## Testing
 
