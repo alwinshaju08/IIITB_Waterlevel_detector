@@ -58,8 +58,7 @@ void monitorWaterLevel() {
     
 
     while (1) {
-       
-        //printf("Powered By Techeonics ");
+
         //printf("Liquid_level= %d\n", Liquid_level);
 
         if (Liquid_level == 1) {
