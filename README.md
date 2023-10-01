@@ -456,7 +456,48 @@ Disassembly of section .text:
    105bc:	00008067          	ret
 
 ```
+My assembly code contains instructions like addi, srai, sw, and so on. Running the sample.py on this water_level_assembly.txt would yield:
 
+```
+Number of different instructions: 35
+List of unique instructions:
+and
+andi
+addiw
+addi
+srai
+jalr
+sw
+bltz
+ecall
+sext.w
+j
+sb
+bne
+slli
+or
+beqz
+auipc
+ret
+sd
+bnez
+li
+jal
+blt
+mv
+lbu
+sllw
+beq
+ld
+bltu
+negw
+jr
+lw
+sub
+bgeu
+add
+
+```
 
 ## Word of Thanks
 I sciencerly thank **Mr. Kunal Gosh**(Founder/**VSD**) for helping me out to complete this flow smoothly.
