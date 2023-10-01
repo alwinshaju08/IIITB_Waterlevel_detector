@@ -10,7 +10,7 @@ This github repository summarizes the progress made in the ASIC class for the ri
 
 # Aim 
 
-In this project, we aim to create a contactless water level indicator to fully embrace automation. The goal is to implement this system at our college, as our current water purifiers lack an automatic water bottle filling feature. Our plan is to incorporate a water level indicator equipped with a buzzer. When an empty bottle is positioned beneath it, the system will automatically fill the bottle until the water level reaches the sensor's position within the purifier. Furthermore, this project can be adapted for use in hospitals to monitor and detect when drip bottles become empty.Best thing about this project is we are implementing this all on riscv processor rather than arduino board .
+In this project, we aim to create a contactless water level indicator to fully embrace automation. The goal is to implement this system at our college, as our current water purifiers lack an automatic water bottle filling feature. Our plan is to incorporate a water level indicator equipped with a buzzer. When an empty bottle is positioned beneath it, the purifier will fill the bottle until the water level reaches the sensor's position within the purifier. Furthermore, this project can be adapted for use in hospitals to monitor and detect when drip bottles become empty.Best thing about this project is we are implementing this all on riscv processor rather than arduino board .
 
 # Requirements 
 
@@ -90,7 +90,16 @@ int main() {
 }
 
 ```
+## Assembly code conversion
 
+Compile the c program using RISCV-V GNU Toolchain and dump the assembly code into sample_assembly.txt using the above commands.
+
+# Note:
+In the above c program, digital read and digital write functions are commented to show how the inputs and outputs are given. For now, we need only the logic which controls the Water_level_sensor.
+
+```
+
+```
 
 
 ## Word of Thanks
