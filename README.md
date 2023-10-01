@@ -73,9 +73,6 @@ void monitorWaterLevel() {
             //printf("Buzzer is OFF\n");
         }
     }
-
-    // Clean up any resources here if needed
-    // For example, you can release GPIO pins
 }
 
 void readWaterLevel() {
