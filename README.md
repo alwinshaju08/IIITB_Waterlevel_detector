@@ -109,9 +109,6 @@ I sciencerly thank **Mr. Kunal Gosh**(Founder/**VSD**) for helping me out to com
 - Kanish R,Colleague,IIIT B
 - Sumanto Kar,VSD Corp.
 - Mayank Kabra,Founder,Chipignite
-- Nanditha Rao, Professor, IIITB 
-- Madhav Rao, Professor, IIITB
-- Manikandan,Professor,IIITB
   
 ## Reference 
 
