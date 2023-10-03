@@ -130,7 +130,7 @@ Disassembly of section .text:
    100f8:	00012503          	lw	a0,0(sp)
    100fc:	00810593          	addi	a1,sp,8
    10100:	00000613          	li	a2,0
-   10104:	084000ef          	jal	ra,10188 <main>
+   10104:	07c000ef          	jal	ra,10180 <main>
    10108:	0980006f          	j	101a0 <exit>
 
 000000000001010c <__do_global_dtors_aux>:
@@ -166,14 +166,14 @@ Disassembly of section .text:
    10178:	00000067          	jr	zero # 0 <register_fini-0x100b0>
    1017c:	00008067          	ret
 
-0000000000010180 <monitorWaterLevel>:
-   10180:	0000006f          	j	10180 <monitorWaterLevel>
+0000000000010180 <main>:
+   10180:	0000006f          	j	10180 <main>
 
-0000000000010184 <readWaterLevel>:
-   10184:	0000006f          	j	10184 <readWaterLevel>
+0000000000010184 <monitorWaterLevel>:
+   10184:	0000006f          	j	10184 <monitorWaterLevel>
 
-0000000000010188 <main>:
-   10188:	0000006f          	j	10188 <main>
+0000000000010188 <readWaterLevel>:
+   10188:	0000006f          	j	10188 <readWaterLevel>
 
 000000000001018c <atexit>:
    1018c:	00050593          	mv	a1,a0
@@ -461,6 +461,7 @@ Disassembly of section .text:
    105b4:	f5818793          	addi	a5,gp,-168 # 11d38 <_impure_ptr>
    105b8:	0007b503          	ld	a0,0(a5)
    105bc:	00008067          	ret
+
 
 ```
 My assembly code contains instructions like addi, srai, sw, and so on. Running the sample.py on this water_level_assembly.txt would yield:
