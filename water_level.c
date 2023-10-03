@@ -1,5 +1,6 @@
 void readWaterLevel();
 void monitorWaterLevel();
+
 int main() {
     while (1) {
         readWaterLevel();
@@ -37,4 +38,4 @@ void monitorWaterLevel() {
 void readWaterLevel() {
     monitorWaterLevel();
 }
-}
+
