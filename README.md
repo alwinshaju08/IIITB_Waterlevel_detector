@@ -46,6 +46,7 @@ gcc water_level.c
 
 ```
 void readWaterLevel();
+void monitorWaterLevel();
 
 int main() {
     while (1) {
@@ -85,12 +86,6 @@ void readWaterLevel() {
     monitorWaterLevel();
 }
 
-int main() {
-    while (1) {
-        readWaterLevel();
-    }
-    return 0;
-}
 ```
 ## Assembly code conversion
 
