@@ -179,39 +179,23 @@ Disassembly of section .text:
 My assembly code contains instructions like addi, srai, sw, and so on. Running the sample.py on this water_level_assembly.txt would yield:
 
 ```
-Number of different instructions: 31
+
+Number of different instructions: 13
 List of unique instructions:
-sll
-and
-addi
-bne
-or
-andi
-srai
-lw
-j
-bnez
-bltu
-lbu
-ret
-li
-blt
-jal
 jalr
-neg
-auipc
-slli
-bgeu
-sb
-jr
-beq
-sub
 sw
-ecall
-beqz
+li
+ret
+j
 add
-mv
-bltz
+or
+lw
+sll
+nop
+and
+beqz
+auipc
+
 
 ```
 
