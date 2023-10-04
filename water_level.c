@@ -11,11 +11,18 @@ int main() {
 // Function to monitor water level and control the buzzer
 void monitorWaterLevel() {
  
-    int Liquid_level = 0;
     // Replace these variables with actual sensor pins and setup
-    int liquidSensorPin = 0; // Replace with the actual GPIO pin connected to the liquid level sensor
-    int buzzerPin = 1; // Replace with the actual GPIO pin connected to the buzzer
-
+    int liquidSensorPin; // Replace with the actual GPIO pin connected to the liquid level sensor
+    int buzzerPin=0; // Replace with the actual GPIO pin connected to the buzzer
+    int buzzer_reg;
+    buzzer_reg = buzzerPin*2;
+     asm(
+	"or x30, x30, %0\n\t" 
+	:"=r"(buzzer_reg));
+    
+    asm(
+	"andi %0, x30, 1\n\t"
+	:"=r"(liquidSensorPin));
     
 
     while (1) {
@@ -23,14 +30,24 @@ void monitorWaterLevel() {
         //printf("Powered By Techeonics ");
         //printf("Liquid_level= %d\n", Liquid_level);
 
-        if (Liquid_level == 1) {
+        if (liquidSensorPin) {
             // Simulate activating the buzzer (replace with actual buzzer control)
             //digital_write(buzzerPin, 1;
             //printf("Buzzer is ON\n");
+            buzzerPin = 1;
+            buzzer_reg = buzzerPin*2;
+            asm(
+		"or x30, x30, %0\n\t" 
+		:"=r"(buzzer_reg));
         } else {
             // Simulate deactivating the buzzer (replace with actual buzzer control)
             //digital_write(buzzerPin, 0);
             //printf("Buzzer is OFF\n");
+            buzzerPin = 0;
+            buzzer_reg = buzzerPin*2;
+            asm(
+		"or x30, x30, %0\n\t" 
+		:"=r"(buzzer_reg));
         }
     }
 }
@@ -38,4 +55,3 @@ void monitorWaterLevel() {
 void readWaterLevel() {
     monitorWaterLevel();
 }
-
