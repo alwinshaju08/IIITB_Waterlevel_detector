@@ -1,0 +1,17 @@
+Number of different instructions: 13
+List of unique instructions:
+add
+nop
+ret
+lw
+and
+beqz
+sll
+sw
+or
+jalr
+auipc
+li
+j
+
+
