@@ -147,8 +147,8 @@ Disassembly of section .text:
   2c:	fec42783          	lw	a5,-20(s0)
   30:	00179793          	sll	a5,a5,0x1
   34:	fef42423          	sw	a5,-24(s0)
-  38:	00ff6f33          	or	t5,t5,a5
-  3c:	fef42423          	sw	a5,-24(s0)
+  38:	fe842783          	lw	a5,-24(s0)
+  3c:	00ff6f33          	or	t5,t5,a5
   40:	001f7793          	and	a5,t5,1
   44:	fef42223          	sw	a5,-28(s0)
 
@@ -160,8 +160,8 @@ Disassembly of section .text:
   58:	fec42783          	lw	a5,-20(s0)
   5c:	00179793          	sll	a5,a5,0x1
   60:	fef42423          	sw	a5,-24(s0)
-  64:	00ff6f33          	or	t5,t5,a5
-  68:	fef42423          	sw	a5,-24(s0)
+  64:	fe842783          	lw	a5,-24(s0)
+  68:	00ff6f33          	or	t5,t5,a5
   6c:	fddff06f          	j	48 <.L6>
 
 00000070 <.L4>:
@@ -169,8 +169,8 @@ Disassembly of section .text:
   74:	fec42783          	lw	a5,-20(s0)
   78:	00179793          	sll	a5,a5,0x1
   7c:	fef42423          	sw	a5,-24(s0)
-  80:	00ff6f33          	or	t5,t5,a5
-  84:	fef42423          	sw	a5,-24(s0)
+  80:	fe842783          	lw	a5,-24(s0)
+  84:	00ff6f33          	or	t5,t5,a5
   88:	fc1ff06f          	j	48 <.L6>
 
 0000008c <readWaterLevel>:
