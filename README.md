@@ -117,7 +117,13 @@ void readWaterLevel() {
 ```
 ## Assembly code conversion
 
-Compile the c program using RISCV-V GNU Toolchain and dump the assembly code into sample_assembly.txt using the above commands.
+Compile the c program using RISCV-V GNU Toolchain and dump the assembly code into sample_assembly.txt using the below commands.
+
+```
+riscv32-unkown-elf-gcc -march=rv32i -mabi=ilp32 -ffreestanding -o ./water_level.o water_level.c
+riscv32-unknown-elf-objdump -d  water_level.o > water_level_assembly.txt
+
+```
 
 ### Note:
 In the above c program, digital read and digital write functions are commented to show how the inputs and outputs are given. For now, we need only the logic which controls the Water_level_sensor.
