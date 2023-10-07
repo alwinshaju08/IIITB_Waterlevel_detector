@@ -63,13 +63,19 @@ void monitorWaterLevel() {
     int buzzerPin=0; // Replace with the actual GPIO pin connected to the buzzer
     int buzzer_reg;
     buzzer_reg = buzzerPin*2;
-     asm(
+     asm volatile(
 	"or x30, x30, %0\n\t" 
-	:"=r"(buzzer_reg));
+	:
+	:"r"(buzzer_reg)
+	:"x30"
+	);
     
-    asm(
+    asm volatile(
 	"andi %0, x30, 1\n\t"
-	:"=r"(liquidSensorPin));
+	:"=r"(liquidSensorPin)
+	:
+	:
+	);
     
 
     while (1) {
@@ -83,18 +89,24 @@ void monitorWaterLevel() {
             //printf("Buzzer is ON\n");
             buzzerPin = 1;
             buzzer_reg = buzzerPin*2;
-            asm(
+            asm volatile(
 		"or x30, x30, %0\n\t" 
-		:"=r"(buzzer_reg));
+		:
+		:"r"(buzzer_reg)
+		:"x30"
+		);
         } else {
             // Simulate deactivating the buzzer (replace with actual buzzer control)
             //digital_write(buzzerPin, 0);
             //printf("Buzzer is OFF\n");
             buzzerPin = 0;
             buzzer_reg = buzzerPin*2;
-            asm(
+            asm volatile(
 		"or x30, x30, %0\n\t" 
-		:"=r"(buzzer_reg));
+		:
+		:"r"(buzzer_reg)
+		:"x30"
+		);
         }
     }
 }
@@ -102,7 +114,6 @@ void monitorWaterLevel() {
 void readWaterLevel() {
     monitorWaterLevel();
 }
-
 ```
 ## Assembly code conversion
 
