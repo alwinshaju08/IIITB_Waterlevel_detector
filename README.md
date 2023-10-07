@@ -193,19 +193,19 @@ My assembly code contains instructions like addi, srai, sw, and so on. Running t
 
 Number of different instructions: 13
 List of unique instructions:
-jalr
-sw
-li
-ret
-j
 add
-or
-lw
-sll
 nop
+ret
+lw
 and
 beqz
+sll
+sw
+or
+jalr
 auipc
+li
+j
 
 
 ```
