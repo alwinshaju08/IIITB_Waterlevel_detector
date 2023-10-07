@@ -226,6 +226,8 @@ I sciencerly thank **Mr. Kunal Gosh**(Founder/**VSD**) for helping me out to com
 - Kanish R,Colleague,IIIT B
 - Sumanto Kar,VSD Corp.
 - Mayank Kabra,imtech
+- Pruthvi parate,MS
+- Bhargav DV,MS
   
 ## Reference 
 
