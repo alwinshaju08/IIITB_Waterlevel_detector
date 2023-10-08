@@ -120,7 +120,7 @@ void readWaterLevel() {
 Compile the c program using RISCV-V GNU Toolchain and dump the assembly code into water_level_assembly.txt using the below commands.
 
 ```
-riscv32-unkown-elf-gcc -march=rv32i -mabi=ilp32 -ffreestanding -ffreestanding -nostdlib -o ./out water_level.c
+riscv32-unkown-elf-gcc -march=rv32i -mabi=ilp32 -ffreestanding -nostdlib -o ./out water_level.c
 riscv32-unknown-elf-objdump -d  -r out > water_level_assembly.txt
 
 ```
