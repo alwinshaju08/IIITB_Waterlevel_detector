@@ -1,63 +1,55 @@
-water_level.o:     file format elf32-littleriscv
+
+out:     file format elf32-littleriscv
 
 
 Disassembly of section .text:
 
-00000000 <main>:
-   0:	ff010113          	add	sp,sp,-16
-   4:	00112623          	sw	ra,12(sp)
-   8:	00812423          	sw	s0,8(sp)
-   c:	01010413          	add	s0,sp,16
+00010074 <main>:
+   10074:	ff010113          	add	sp,sp,-16
+   10078:	00112623          	sw	ra,12(sp)
+   1007c:	00812423          	sw	s0,8(sp)
+   10080:	01010413          	add	s0,sp,16
+   10084:	078000ef          	jal	100fc <readWaterLevel>
+   10088:	ffdff06f          	j	10084 <main+0x10>
 
-00000010 <.L2>:
-  10:	00000097          	auipc	ra,0x0
-  14:	000080e7          	jalr	ra # 10 <.L2>
-  18:	ff9ff06f          	j	10 <.L2>
+0001008c <monitorWaterLevel>:
+   1008c:	fe010113          	add	sp,sp,-32
+   10090:	00812e23          	sw	s0,28(sp)
+   10094:	02010413          	add	s0,sp,32
+   10098:	fe042623          	sw	zero,-20(s0)
+   1009c:	fec42783          	lw	a5,-20(s0)
+   100a0:	00179793          	sll	a5,a5,0x1
+   100a4:	fef42423          	sw	a5,-24(s0)
+   100a8:	fe842783          	lw	a5,-24(s0)
+   100ac:	00ff6f33          	or	t5,t5,a5
+   100b0:	001f7793          	and	a5,t5,1
+   100b4:	fef42223          	sw	a5,-28(s0)
+   100b8:	fe442783          	lw	a5,-28(s0)
+   100bc:	02078263          	beqz	a5,100e0 <monitorWaterLevel+0x54>
+   100c0:	00100793          	li	a5,1
+   100c4:	fef42623          	sw	a5,-20(s0)
+   100c8:	fec42783          	lw	a5,-20(s0)
+   100cc:	00179793          	sll	a5,a5,0x1
+   100d0:	fef42423          	sw	a5,-24(s0)
+   100d4:	fe842783          	lw	a5,-24(s0)
+   100d8:	00ff6f33          	or	t5,t5,a5
+   100dc:	fddff06f          	j	100b8 <monitorWaterLevel+0x2c>
+   100e0:	fe042623          	sw	zero,-20(s0)
+   100e4:	fec42783          	lw	a5,-20(s0)
+   100e8:	00179793          	sll	a5,a5,0x1
+   100ec:	fef42423          	sw	a5,-24(s0)
+   100f0:	fe842783          	lw	a5,-24(s0)
+   100f4:	00ff6f33          	or	t5,t5,a5
+   100f8:	fc1ff06f          	j	100b8 <monitorWaterLevel+0x2c>
 
-0000001c <monitorWaterLevel>:
-  1c:	fe010113          	add	sp,sp,-32
-  20:	00812e23          	sw	s0,28(sp)
-  24:	02010413          	add	s0,sp,32
-  28:	fe042623          	sw	zero,-20(s0)
-  2c:	fec42783          	lw	a5,-20(s0)
-  30:	00179793          	sll	a5,a5,0x1
-  34:	fef42423          	sw	a5,-24(s0)
-  38:	fe842783          	lw	a5,-24(s0)
-  3c:	00ff6f33          	or	t5,t5,a5
-  40:	001f7793          	and	a5,t5,1
-  44:	fef42223          	sw	a5,-28(s0)
-
-00000048 <.L6>:
-  48:	fe442783          	lw	a5,-28(s0)
-  4c:	02078263          	beqz	a5,70 <.L4>
-  50:	00100793          	li	a5,1
-  54:	fef42623          	sw	a5,-20(s0)
-  58:	fec42783          	lw	a5,-20(s0)
-  5c:	00179793          	sll	a5,a5,0x1
-  60:	fef42423          	sw	a5,-24(s0)
-  64:	fe842783          	lw	a5,-24(s0)
-  68:	00ff6f33          	or	t5,t5,a5
-  6c:	fddff06f          	j	48 <.L6>
-
-00000070 <.L4>:
-  70:	fe042623          	sw	zero,-20(s0)
-  74:	fec42783          	lw	a5,-20(s0)
-  78:	00179793          	sll	a5,a5,0x1
-  7c:	fef42423          	sw	a5,-24(s0)
-  80:	fe842783          	lw	a5,-24(s0)
-  84:	00ff6f33          	or	t5,t5,a5
-  88:	fc1ff06f          	j	48 <.L6>
-
-0000008c <readWaterLevel>:
-  8c:	ff010113          	add	sp,sp,-16
-  90:	00112623          	sw	ra,12(sp)
-  94:	00812423          	sw	s0,8(sp)
-  98:	01010413          	add	s0,sp,16
-  9c:	00000097          	auipc	ra,0x0
-  a0:	000080e7          	jalr	ra # 9c <readWaterLevel+0x10>
-  a4:	00000013          	nop
-  a8:	00c12083          	lw	ra,12(sp)
-  ac:	00812403          	lw	s0,8(sp)
-  b0:	01010113          	add	sp,sp,16
-  b4:	00008067          	ret
-
+000100fc <readWaterLevel>:
+   100fc:	ff010113          	add	sp,sp,-16
+   10100:	00112623          	sw	ra,12(sp)
+   10104:	00812423          	sw	s0,8(sp)
+   10108:	01010413          	add	s0,sp,16
+   1010c:	f81ff0ef          	jal	1008c <monitorWaterLevel>
+   10110:	00000013          	nop
+   10114:	00c12083          	lw	ra,12(sp)
+   10118:	00812403          	lw	s0,8(sp)
+   1011c:	01010113          	add	sp,sp,16
+   10120:	00008067          	ret
