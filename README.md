@@ -124,6 +124,7 @@ In the above c program, digital read and digital write functions are commented t
 
 ```
 
+
 out:     file format elf32-littleriscv
 
 
@@ -134,7 +135,7 @@ Disassembly of section .text:
    10078:	00112623          	sw	ra,12(sp)
    1007c:	00812423          	sw	s0,8(sp)
    10080:	01010413          	add	s0,sp,16
-   10084:	078000ef          	jal	100fc <readWaterLevel>
+   10084:	084000ef          	jal	10108 <readWaterLevel>
    10088:	ffdff06f          	j	10084 <main+0x10>
 
 0001008c <monitorWaterLevel>:
@@ -158,26 +159,29 @@ Disassembly of section .text:
    100d0:	fef42423          	sw	a5,-24(s0)
    100d4:	fe842783          	lw	a5,-24(s0)
    100d8:	00ff6f33          	or	t5,t5,a5
-   100dc:	fddff06f          	j	100b8 <monitorWaterLevel+0x2c>
+   100dc:	01c0006f          	j	100f8 <monitorWaterLevel+0x6c>
    100e0:	fe042623          	sw	zero,-20(s0)
    100e4:	fec42783          	lw	a5,-20(s0)
    100e8:	00179793          	sll	a5,a5,0x1
    100ec:	fef42423          	sw	a5,-24(s0)
    100f0:	fe842783          	lw	a5,-24(s0)
    100f4:	00ff6f33          	or	t5,t5,a5
-   100f8:	fc1ff06f          	j	100b8 <monitorWaterLevel+0x2c>
+   100f8:	00000013          	nop
+   100fc:	01c12403          	lw	s0,28(sp)
+   10100:	02010113          	add	sp,sp,32
+   10104:	00008067          	ret
 
-000100fc <readWaterLevel>:
-   100fc:	ff010113          	add	sp,sp,-16
-   10100:	00112623          	sw	ra,12(sp)
-   10104:	00812423          	sw	s0,8(sp)
-   10108:	01010413          	add	s0,sp,16
-   1010c:	f81ff0ef          	jal	1008c <monitorWaterLevel>
-   10110:	00000013          	nop
-   10114:	00c12083          	lw	ra,12(sp)
-   10118:	00812403          	lw	s0,8(sp)
-   1011c:	01010113          	add	sp,sp,16
-   10120:	00008067          	ret
+00010108 <readWaterLevel>:
+   10108:	ff010113          	add	sp,sp,-16
+   1010c:	00112623          	sw	ra,12(sp)
+   10110:	00812423          	sw	s0,8(sp)
+   10114:	01010413          	add	s0,sp,16
+   10118:	f75ff0ef          	jal	1008c <monitorWaterLevel>
+   1011c:	00000013          	nop
+   10120:	00c12083          	lw	ra,12(sp)
+   10124:	00812403          	lw	s0,8(sp)
+   10128:	01010113          	add	sp,sp,16
+   1012c:	00008067          	ret
 
 ```
 My assembly code contains instructions like addi, srai, sw, and so on. Running the sample.py on this water_level_assembly.txt would yield:
