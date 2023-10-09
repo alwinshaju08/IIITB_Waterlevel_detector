@@ -76,12 +76,6 @@ void monitorWaterLevel() {
 	:
 	:
 	);
-    
-
-    while (1) {
-       // int Liquid_level = digital_read(liquidSensorPin);
-        //printf("Powered By Techeonics ");
-        //printf("Liquid_level= %d\n", Liquid_level);
 
         if (liquidSensorPin) {
             // Simulate activating the buzzer (replace with actual buzzer control)
@@ -109,7 +103,7 @@ void monitorWaterLevel() {
 		);
         }
     }
-}
+
 
 void readWaterLevel() {
     monitorWaterLevel();
