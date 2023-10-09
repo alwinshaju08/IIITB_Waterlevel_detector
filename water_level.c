@@ -1,7 +1,19 @@
 void readWaterLevel();
 void monitorWaterLevel();
 
+int liquidSensorPin; 
+int buzzerPin=0; 
+int buzzer_reg;
 int main() {
+
+     buzzer_reg = buzzerPin*2;
+     asm volatile(
+	"or x30, x30, %0\n\t" 
+	:
+	:"r"(buzzer_reg)
+	:"x30"
+	);
+
     while (1) {
         readWaterLevel();
     }
@@ -11,26 +23,12 @@ int main() {
 // Function to monitor water level and control the buzzer
 void monitorWaterLevel() {
  
-    // Replace these variables with actual sensor pins and setup
-    int liquidSensorPin; // Replace with the actual GPIO pin connected to the liquid level sensor
-    int buzzerPin=0; // Replace with the actual GPIO pin connected to the buzzer
-    int buzzer_reg;
-    buzzer_reg = buzzerPin*2;
-     asm volatile(
-	"or x30, x30, %0\n\t" 
-	:
-	:"r"(buzzer_reg)
-	:"x30"
-	);
-    
     asm volatile(
 	"andi %0, x30, 1\n\t"
 	:"=r"(liquidSensorPin)
 	:
 	:
 	);
-    
-
 
         if (liquidSensorPin) {
             // Simulate activating the buzzer (replace with actual buzzer control)
@@ -63,3 +61,4 @@ void monitorWaterLevel() {
 void readWaterLevel() {
     monitorWaterLevel();
 }
+
