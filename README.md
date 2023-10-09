@@ -216,6 +216,9 @@ I sciencerly thank **Mr. Kunal Gosh**(Founder/**VSD**) for helping me out to com
 - Mayank Kabra,imtech
 - Pruthvi parate,MS
 - Bhargav DV,MS
+- Emil Jayanth Lal, IIITB
+- Shant Rakshit,IIIT B
+  
   
 ## Reference 
 
