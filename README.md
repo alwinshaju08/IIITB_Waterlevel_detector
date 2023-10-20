@@ -187,16 +187,15 @@ My assembly code contains instructions like addi, srai, sw, and so on. Running t
 ```
 Number of different instructions: 9
 List of unique instructions:
-or
-lw
+add
+beqz
+sw
 sll
+lw
+and
 j
 li
-sw
-beqz
-add
-and
-
+or
 ```
 
 ## Word of Thanks
