@@ -1,64 +1,70 @@
-void readWaterLevel();
-void monitorWaterLevel();
-
-int liquidSensorPin; 
-int buzzerPin=0; 
-int buzzer_reg;
 int main() {
+    int liquidSensorPin;
+    int buzzerPin = 0;
+    int solenoid = 0; // Additional output pin
+    int buzzer_reg;
+    int solenoid_reg; // Register for the solenoid
+    int switchPin ;// Input switch pin
+    int switchValue; 
 
-     buzzer_reg = buzzerPin*2;
-     asm volatile(
-	"or x30, x30, %0\n\t" 
-	:
-	:"r"(buzzer_reg)
-	:"x30"
-	);
+    buzzer_reg = buzzerPin * 4;
+    solenoid_reg = solenoid * 8; // Calculate the register for the solenoid
+
+    asm volatile(
+        "or x30, x30, %0\n\t"
+        "or x30, x30, %1\n\t"
+        :
+        : "r"(buzzer_reg), "r"(solenoid_reg)
+        : "x30"
+    );
 
     while (1) {
-        readWaterLevel();
-    }
-    return 0;
-}
+        
+        asm volatile(
+            "andi %0, x30, 1\n\t" // Assuming switch is connected to bit 3 (8 in binary)
+            : "=r"(switchValue)
+            :
+            :
+        );
 
-// Function to monitor water level and control the buzzer
-void monitorWaterLevel() {
- 
-    asm volatile(
-	"andi %0, x30, 1\n\t"
-	:"=r"(liquidSensorPin)
-	:
-	:
-	);
+        if (switchValue) {
+            // Simulate activating the buzzer and solenoid (replace with actual control)
+            asm volatile(
+                "andi %0, x30, 2\n\t"
+                : "=r"(liquidSensorPin)
+                :
+                :
+            );
 
-        if (liquidSensorPin) {
-            // Simulate activating the buzzer (replace with actual buzzer control)
-            //digital_write(buzzerPin, 1;
-            //printf("Buzzer is ON\n");
-            buzzerPin = 1;
-            buzzer_reg = buzzerPin*2;
+            if (liquidSensorPin) {
+                // Simulate activating the buzzer and solenoid (replace with actual control)
+                // digital_write(buzzerPin, 1);
+                // digital_write(solenoid, 1);
+                // printf("Buzzer and solenoid are ON\n");
+                buzzerPin = 1;
+                solenoid = 1;
+            } else {
+                // Simulate deactivating the buzzer and solenoid (replace with actual control)
+                // digital_write(buzzerPin, 0);
+                // digital_write(solenoid, 0);
+                // printf("Buzzer and solenoid are OFF\n");
+                buzzerPin = 0;
+                solenoid = 0;
+            }
+
+            // Update the corresponding registers for the buzzer and solenoid
+            buzzer_reg = buzzerPin * 4;
+            solenoid_reg = solenoid * 8;
+
             asm volatile(
-		"or x30, x30, %0\n\t" 
-		:
-		:"r"(buzzer_reg)
-		:"x30"
-		);
-        } else {
-            // Simulate deactivating the buzzer (replace with actual buzzer control)
-            //digital_write(buzzerPin, 0);
-            //printf("Buzzer is OFF\n");
-            buzzerPin = 0;
-            buzzer_reg = buzzerPin*2;
-            asm volatile(
-		"or x30, x30, %0\n\t" 
-		:
-		:"r"(buzzer_reg)
-		:"x30"
-		);
+                "or x30, x30, %0\n\t"
+                "or x30, x30, %1\n\t"
+                :
+                : "r"(buzzer_reg), "r"(solenoid_reg)
+                : "x30"
+            );
         }
     }
 
-
-void readWaterLevel() {
-    monitorWaterLevel();
+    return 0;
 }
-
