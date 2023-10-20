@@ -132,71 +132,53 @@ In the above c program, digital read and digital write functions are commented t
 
 ```
 
-
-
 out:     file format elf32-littleriscv
 
 
 Disassembly of section .text:
 
-00010094 <main>:
-   10094:	ff010113          	add	sp,sp,-16
-   10098:	00112623          	sw	ra,12(sp)
-   1009c:	00812423          	sw	s0,8(sp)
-   100a0:	01010413          	add	s0,sp,16
-   100a4:	000117b7          	lui	a5,0x11
-   100a8:	16c7a783          	lw	a5,364(a5) # 1116c <buzzerPin>
-   100ac:	00179713          	sll	a4,a5,0x1
-   100b0:	80e1a423          	sw	a4,-2040(gp) # 11170 <buzzer_reg>
-   100b4:	8081a783          	lw	a5,-2040(gp) # 11170 <buzzer_reg>
-   100b8:	00ff6f33          	or	t5,t5,a5
-   100bc:	084000ef          	jal	10140 <readWaterLevel>
-   100c0:	ffdff06f          	j	100bc <main+0x28>
-
-000100c4 <monitorWaterLevel>:
-   100c4:	ff010113          	add	sp,sp,-16
-   100c8:	00812623          	sw	s0,12(sp)
-   100cc:	01010413          	add	s0,sp,16
-   100d0:	001f7713          	and	a4,t5,1
-   100d4:	000117b7          	lui	a5,0x11
-   100d8:	16e7a423          	sw	a4,360(a5) # 11168 <__DATA_BEGIN__>
-   100dc:	000117b7          	lui	a5,0x11
-   100e0:	1687a783          	lw	a5,360(a5) # 11168 <__DATA_BEGIN__>
-   100e4:	02078663          	beqz	a5,10110 <monitorWaterLevel+0x4c>
-   100e8:	000117b7          	lui	a5,0x11
-   100ec:	00100713          	li	a4,1
-   100f0:	16e7a623          	sw	a4,364(a5) # 1116c <buzzerPin>
-   100f4:	000117b7          	lui	a5,0x11
-   100f8:	16c7a783          	lw	a5,364(a5) # 1116c <buzzerPin>
-   100fc:	00179713          	sll	a4,a5,0x1
-   10100:	80e1a423          	sw	a4,-2040(gp) # 11170 <buzzer_reg>
-   10104:	8081a783          	lw	a5,-2040(gp) # 11170 <buzzer_reg>
-   10108:	00ff6f33          	or	t5,t5,a5
-   1010c:	0240006f          	j	10130 <monitorWaterLevel+0x6c>
-   10110:	000117b7          	lui	a5,0x11
-   10114:	1607a623          	sw	zero,364(a5) # 1116c <buzzerPin>
-   10118:	000117b7          	lui	a5,0x11
-   1011c:	16c7a783          	lw	a5,364(a5) # 1116c <buzzerPin>
-   10120:	00179713          	sll	a4,a5,0x1
-   10124:	80e1a423          	sw	a4,-2040(gp) # 11170 <buzzer_reg>
-   10128:	8081a783          	lw	a5,-2040(gp) # 11170 <buzzer_reg>
-   1012c:	00ff6f33          	or	t5,t5,a5
-   10130:	00000013          	nop
-   10134:	00c12403          	lw	s0,12(sp)
-   10138:	01010113          	add	sp,sp,16
-   1013c:	00008067          	ret
-
-00010140 <readWaterLevel>:
-   10140:	ff010113          	add	sp,sp,-16
-   10144:	00112623          	sw	ra,12(sp)
-   10148:	00812423          	sw	s0,8(sp)
-   1014c:	01010413          	add	s0,sp,16
-   10150:	f75ff0ef          	jal	100c4 <monitorWaterLevel>
-   10154:	00000013          	nop
-   10158:	00c12083          	lw	ra,12(sp)
-   1015c:	00812403          	lw	s0,8(sp)
-   10160:	01010113          	add	sp,sp,16
-   10164:	00008067          	ret
+00010074 <main>:
+   10074:	fd010113          	add	sp,sp,-48
+   10078:	02812623          	sw	s0,44(sp)
+   1007c:	03010413          	add	s0,sp,48
+   10080:	fe042623          	sw	zero,-20(s0)
+   10084:	fe042423          	sw	zero,-24(s0)
+   10088:	fec42783          	lw	a5,-20(s0)
+   1008c:	00279793          	sll	a5,a5,0x2
+   10090:	fef42223          	sw	a5,-28(s0)
+   10094:	fe842783          	lw	a5,-24(s0)
+   10098:	00379793          	sll	a5,a5,0x3
+   1009c:	fef42023          	sw	a5,-32(s0)
+   100a0:	fe442783          	lw	a5,-28(s0)
+   100a4:	fe042703          	lw	a4,-32(s0)
+   100a8:	00ff6f33          	or	t5,t5,a5
+   100ac:	00ef6f33          	or	t5,t5,a4
+   100b0:	001f7793          	and	a5,t5,1
+   100b4:	fcf42e23          	sw	a5,-36(s0)
+   100b8:	fdc42783          	lw	a5,-36(s0)
+   100bc:	fe078ae3          	beqz	a5,100b0 <main+0x3c>
+   100c0:	002f7793          	and	a5,t5,2
+   100c4:	fcf42c23          	sw	a5,-40(s0)
+   100c8:	fd842783          	lw	a5,-40(s0)
+   100cc:	00078c63          	beqz	a5,100e4 <main+0x70>
+   100d0:	00100793          	li	a5,1
+   100d4:	fef42623          	sw	a5,-20(s0)
+   100d8:	00100793          	li	a5,1
+   100dc:	fef42423          	sw	a5,-24(s0)
+   100e0:	00c0006f          	j	100ec <main+0x78>
+   100e4:	fe042623          	sw	zero,-20(s0)
+   100e8:	fe042423          	sw	zero,-24(s0)
+   100ec:	fec42783          	lw	a5,-20(s0)
+   100f0:	00279793          	sll	a5,a5,0x2
+   100f4:	fef42223          	sw	a5,-28(s0)
+   100f8:	fe842783          	lw	a5,-24(s0)
+   100fc:	00379793          	sll	a5,a5,0x3
+   10100:	fef42023          	sw	a5,-32(s0)
+   10104:	fe442783          	lw	a5,-28(s0)
+   10108:	fe042703          	lw	a4,-32(s0)
+   1010c:	00ff6f33          	or	t5,t5,a5
+   10110:	00ef6f33          	or	t5,t5,a4
+   10114:	f9dff06f          	j	100b0 <main+0x3c>
 
 ```
 My assembly code contains instructions like addi, srai, sw, and so on. Running the sample.py on this water_level_assembly.txt would yield:
