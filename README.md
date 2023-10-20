@@ -48,7 +48,7 @@ gcc water_level.c
 int main() {
     int liquidSensorPin;
     int buzzerPin = 0;
-    int solenoid = 0; // Additional output pin
+    int solenoid = 1; // Additional output pin
     int buzzer_reg;
     int solenoid_reg; // Register for the solenoid
     int switchValue;  // Input switch pin
@@ -88,14 +88,14 @@ int main() {
                 // digital_write(solenoid, 1);
                 // printf("Buzzer and solenoid are ON\n");
                 buzzerPin = 1;
-                solenoid = 1;
+                solenoid = 0;
             } else {
                 // Simulate deactivating the buzzer and solenoid (replace with actual control)
                 // digital_write(buzzerPin, 0);
                 // digital_write(solenoid, 0);
                 // printf("Buzzer and solenoid are OFF\n");
                 buzzerPin = 0;
-                solenoid = 0;
+                solenoid = 1;
             }
 
             // Update the corresponding registers for the buzzer and solenoid
