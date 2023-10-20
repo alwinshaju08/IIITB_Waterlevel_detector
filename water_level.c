@@ -4,8 +4,7 @@ int main() {
     int solenoid = 0; // Additional output pin
     int buzzer_reg;
     int solenoid_reg; // Register for the solenoid
-    int switchPin ;// Input switch pin
-    int switchValue; 
+    int switchValue; // Input switch pin
 
     buzzer_reg = buzzerPin * 4;
     solenoid_reg = solenoid * 8; // Calculate the register for the solenoid
