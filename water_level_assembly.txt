@@ -9,40 +9,41 @@ Disassembly of section .text:
    10078:	02812623          	sw	s0,44(sp)
    1007c:	03010413          	add	s0,sp,48
    10080:	fe042623          	sw	zero,-20(s0)
-   10084:	fe042423          	sw	zero,-24(s0)
-   10088:	fec42783          	lw	a5,-20(s0)
-   1008c:	00279793          	sll	a5,a5,0x2
-   10090:	fef42223          	sw	a5,-28(s0)
-   10094:	fe842783          	lw	a5,-24(s0)
-   10098:	00379793          	sll	a5,a5,0x3
-   1009c:	fef42023          	sw	a5,-32(s0)
-   100a0:	fe442783          	lw	a5,-28(s0)
-   100a4:	fe042703          	lw	a4,-32(s0)
-   100a8:	00ff6f33          	or	t5,t5,a5
-   100ac:	00ef6f33          	or	t5,t5,a4
-   100b0:	001f7793          	and	a5,t5,1
-   100b4:	fcf42e23          	sw	a5,-36(s0)
-   100b8:	fdc42783          	lw	a5,-36(s0)
-   100bc:	fe078ae3          	beqz	a5,100b0 <main+0x3c>
-   100c0:	002f7793          	and	a5,t5,2
-   100c4:	fcf42c23          	sw	a5,-40(s0)
-   100c8:	fd842783          	lw	a5,-40(s0)
-   100cc:	00078c63          	beqz	a5,100e4 <main+0x70>
-   100d0:	00100793          	li	a5,1
-   100d4:	fef42623          	sw	a5,-20(s0)
-   100d8:	00100793          	li	a5,1
-   100dc:	fef42423          	sw	a5,-24(s0)
-   100e0:	00c0006f          	j	100ec <main+0x78>
+   10084:	00100793          	li	a5,1
+   10088:	fef42423          	sw	a5,-24(s0)
+   1008c:	fec42783          	lw	a5,-20(s0)
+   10090:	00279793          	sll	a5,a5,0x2
+   10094:	fef42223          	sw	a5,-28(s0)
+   10098:	fe842783          	lw	a5,-24(s0)
+   1009c:	00379793          	sll	a5,a5,0x3
+   100a0:	fef42023          	sw	a5,-32(s0)
+   100a4:	fe442783          	lw	a5,-28(s0)
+   100a8:	fe042703          	lw	a4,-32(s0)
+   100ac:	00ff6f33          	or	t5,t5,a5
+   100b0:	00ef6f33          	or	t5,t5,a4
+   100b4:	001f7793          	and	a5,t5,1
+   100b8:	fcf42e23          	sw	a5,-36(s0)
+   100bc:	fdc42783          	lw	a5,-36(s0)
+   100c0:	fe078ae3          	beqz	a5,100b4 <main+0x40>
+   100c4:	002f7793          	and	a5,t5,2
+   100c8:	fcf42c23          	sw	a5,-40(s0)
+   100cc:	fd842783          	lw	a5,-40(s0)
+   100d0:	00078a63          	beqz	a5,100e4 <main+0x70>
+   100d4:	00100793          	li	a5,1
+   100d8:	fef42623          	sw	a5,-20(s0)
+   100dc:	fe042423          	sw	zero,-24(s0)
+   100e0:	0100006f          	j	100f0 <main+0x7c>
    100e4:	fe042623          	sw	zero,-20(s0)
-   100e8:	fe042423          	sw	zero,-24(s0)
-   100ec:	fec42783          	lw	a5,-20(s0)
-   100f0:	00279793          	sll	a5,a5,0x2
-   100f4:	fef42223          	sw	a5,-28(s0)
-   100f8:	fe842783          	lw	a5,-24(s0)
-   100fc:	00379793          	sll	a5,a5,0x3
-   10100:	fef42023          	sw	a5,-32(s0)
-   10104:	fe442783          	lw	a5,-28(s0)
-   10108:	fe042703          	lw	a4,-32(s0)
-   1010c:	00ff6f33          	or	t5,t5,a5
-   10110:	00ef6f33          	or	t5,t5,a4
-   10114:	f9dff06f          	j	100b0 <main+0x3c>
+   100e8:	00100793          	li	a5,1
+   100ec:	fef42423          	sw	a5,-24(s0)
+   100f0:	fec42783          	lw	a5,-20(s0)
+   100f4:	00279793          	sll	a5,a5,0x2
+   100f8:	fef42223          	sw	a5,-28(s0)
+   100fc:	fe842783          	lw	a5,-24(s0)
+   10100:	00379793          	sll	a5,a5,0x3
+   10104:	fef42023          	sw	a5,-32(s0)
+   10108:	fe442783          	lw	a5,-28(s0)
+   1010c:	fe042703          	lw	a4,-32(s0)
+   10110:	00ff6f33          	or	t5,t5,a5
+   10114:	00ef6f33          	or	t5,t5,a4
+   10118:	f9dff06f          	j	100b4 <main+0x40>
