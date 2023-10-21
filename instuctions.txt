@@ -1,11 +1,11 @@
 Number of different instructions: 9
 List of unique instructions:
-add
-beqz
-sw
-sll
-lw
-and
-j
-li
 or
+lw
+li
+sw
+slli
+beqz
+j
+addi
+andi
