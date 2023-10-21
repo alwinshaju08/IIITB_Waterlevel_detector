@@ -131,55 +131,55 @@ In the above c program, digital read and digital write functions are commented t
 
 ```
 
-
 out:     file format elf32-littleriscv
 
 
 Disassembly of section .text:
 
-00010074 <main>:
-   10074:	fd010113          	add	sp,sp,-48
-   10078:	02812623          	sw	s0,44(sp)
-   1007c:	03010413          	add	s0,sp,48
-   10080:	fe042623          	sw	zero,-20(s0)
-   10084:	00100793          	li	a5,1
-   10088:	fef42423          	sw	a5,-24(s0)
-   1008c:	fec42783          	lw	a5,-20(s0)
-   10090:	00279793          	sll	a5,a5,0x2
-   10094:	fef42223          	sw	a5,-28(s0)
-   10098:	fe842783          	lw	a5,-24(s0)
-   1009c:	00379793          	sll	a5,a5,0x3
-   100a0:	fef42023          	sw	a5,-32(s0)
-   100a4:	fe442783          	lw	a5,-28(s0)
-   100a8:	fe042703          	lw	a4,-32(s0)
-   100ac:	00ff6f33          	or	t5,t5,a5
-   100b0:	00ef6f33          	or	t5,t5,a4
-   100b4:	001f7793          	and	a5,t5,1
-   100b8:	fcf42e23          	sw	a5,-36(s0)
-   100bc:	fdc42783          	lw	a5,-36(s0)
-   100c0:	fe078ae3          	beqz	a5,100b4 <main+0x40>
-   100c4:	002f7793          	and	a5,t5,2
-   100c8:	fcf42c23          	sw	a5,-40(s0)
-   100cc:	fd842783          	lw	a5,-40(s0)
-   100d0:	00078a63          	beqz	a5,100e4 <main+0x70>
-   100d4:	00100793          	li	a5,1
-   100d8:	fef42623          	sw	a5,-20(s0)
-   100dc:	fe042423          	sw	zero,-24(s0)
-   100e0:	0100006f          	j	100f0 <main+0x7c>
-   100e4:	fe042623          	sw	zero,-20(s0)
-   100e8:	00100793          	li	a5,1
-   100ec:	fef42423          	sw	a5,-24(s0)
-   100f0:	fec42783          	lw	a5,-20(s0)
-   100f4:	00279793          	sll	a5,a5,0x2
-   100f8:	fef42223          	sw	a5,-28(s0)
-   100fc:	fe842783          	lw	a5,-24(s0)
-   10100:	00379793          	sll	a5,a5,0x3
-   10104:	fef42023          	sw	a5,-32(s0)
-   10108:	fe442783          	lw	a5,-28(s0)
-   1010c:	fe042703          	lw	a4,-32(s0)
-   10110:	00ff6f33          	or	t5,t5,a5
-   10114:	00ef6f33          	or	t5,t5,a4
-   10118:	f9dff06f          	j	100b4 <main+0x40>
+00010054 <main>:
+   10054:	fd010113          	addi	sp,sp,-48
+   10058:	02812623          	sw	s0,44(sp)
+   1005c:	03010413          	addi	s0,sp,48
+   10060:	fe042623          	sw	zero,-20(s0)
+   10064:	00100793          	li	a5,1
+   10068:	fef42423          	sw	a5,-24(s0)
+   1006c:	fec42783          	lw	a5,-20(s0)
+   10070:	00279793          	slli	a5,a5,0x2
+   10074:	fef42223          	sw	a5,-28(s0)
+   10078:	fe842783          	lw	a5,-24(s0)
+   1007c:	00379793          	slli	a5,a5,0x3
+   10080:	fef42023          	sw	a5,-32(s0)
+   10084:	fe442783          	lw	a5,-28(s0)
+   10088:	fe042703          	lw	a4,-32(s0)
+   1008c:	00ff6f33          	or	t5,t5,a5
+   10090:	00ef6f33          	or	t5,t5,a4
+   10094:	001f7793          	andi	a5,t5,1
+   10098:	fcf42e23          	sw	a5,-36(s0)
+   1009c:	fdc42783          	lw	a5,-36(s0)
+   100a0:	fe078ae3          	beqz	a5,10094 <main+0x40>
+   100a4:	002f7793          	andi	a5,t5,2
+   100a8:	fcf42c23          	sw	a5,-40(s0)
+   100ac:	fd842783          	lw	a5,-40(s0)
+   100b0:	00078a63          	beqz	a5,100c4 <main+0x70>
+   100b4:	00100793          	li	a5,1
+   100b8:	fef42623          	sw	a5,-20(s0)
+   100bc:	fe042423          	sw	zero,-24(s0)
+   100c0:	0100006f          	j	100d0 <main+0x7c>
+   100c4:	fe042623          	sw	zero,-20(s0)
+   100c8:	00100793          	li	a5,1
+   100cc:	fef42423          	sw	a5,-24(s0)
+   100d0:	fec42783          	lw	a5,-20(s0)
+   100d4:	00279793          	slli	a5,a5,0x2
+   100d8:	fef42223          	sw	a5,-28(s0)
+   100dc:	fe842783          	lw	a5,-24(s0)
+   100e0:	00379793          	slli	a5,a5,0x3
+   100e4:	fef42023          	sw	a5,-32(s0)
+   100e8:	fe442783          	lw	a5,-28(s0)
+   100ec:	fe042703          	lw	a4,-32(s0)
+   100f0:	00ff6f33          	or	t5,t5,a5
+   100f4:	00ef6f33          	or	t5,t5,a4
+   100f8:	f9dff06f          	j	10094 <main+0x40>
+
 
 ```
 My assembly code contains instructions like addi, srai, sw, and so on. Running the sample.py on this water_level_assembly.txt would yield:
@@ -187,15 +187,16 @@ My assembly code contains instructions like addi, srai, sw, and so on. Running t
 ```
 Number of different instructions: 9
 List of unique instructions:
-add
-beqz
-sw
-sll
-lw
-and
-j
-li
 or
+lw
+li
+sw
+slli
+beqz
+j
+addi
+andi
+
 ```
 
 ## Word of Thanks
