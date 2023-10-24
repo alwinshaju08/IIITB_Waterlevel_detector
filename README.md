@@ -274,7 +274,7 @@ slli
 
 ```
 
-Spike results:
+# Spike results:
 
 ```
 riscv64-unknown-elf-gcc -march=rv64i -mabi=lp64 -ffreestanding -o out water_level.c
@@ -296,6 +296,8 @@ when i am giving swicth value as 0 and liquidsensor as 0 : it is stopping in the
 
 
 <img width="682" alt="Screenshot 2023-10-24 at 8 00 27 PM" src="https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/a7da28fb-9b60-4176-a9ca-557dd898a587">
+
+# Functional Verification : 
 
 
 
