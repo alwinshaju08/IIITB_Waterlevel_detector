@@ -266,6 +266,20 @@ andi
 
 ```
 
+Spike results:
+
+
+<img width="682" alt="Screenshot 2023-10-24 at 8 00 27 PM" src="https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/d1cc084e-9231-497d-90ca-313b9339fa8b">
+
+
+<img width="638" alt="Screenshot 2023-10-24 at 7 59 51 PM" src="https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/fff57d77-3a7e-4c58-a607-3de64a0c9eee">
+
+
+<img width="682" alt="Screenshot 2023-10-24 at 7 59 01 PM" src="https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/c0f91c83-c6e9-4426-a2b9-55ce2ec9015f">
+
+
+
+
 ## Word of Thanks
 I sciencerly thank **Mr. Kunal Gosh**(Founder/**VSD**) for helping me out to complete this flow smoothly.
 
