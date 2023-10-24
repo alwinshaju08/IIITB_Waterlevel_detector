@@ -299,7 +299,7 @@ when i am giving swicth value as 0 and liquidsensor as 0 : it is stopping in the
 
 # Functional Verification : 
 
-Here in First example when switch value and sensor_pin both are zero then there is no output as system is not working state now ,write done basically means uart has done transmitting data
+Here in First example when switch value and sensor_pin both are zero then there is no output as system is not in working state now ,write done basically means uart has done transmitting data
 
 ![Screenshot from 2023-10-25 01-57-14](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/1a3a09c0-3d48-458c-a8d5-0df39dcf0ddb)
 
