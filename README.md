@@ -276,6 +276,7 @@ slli
 
 Spike results:
 
+Here i have done here without -march and -mabi but i checked it out in my friends laptop with -march and -mabi , it is still working for those commands : 
 
 <img width="682" alt="Screenshot 2023-10-24 at 8 00 27 PM" src="https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/d1cc084e-9231-497d-90ca-313b9339fa8b">
 
