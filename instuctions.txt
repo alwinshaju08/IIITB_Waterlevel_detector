@@ -1,11 +1,13 @@
-Number of different instructions: 9
+Number of different instructions: 10
 List of unique instructions:
-or
-lw
-li
+and
 sw
-slli
 beqz
 j
+li
+lw
+or
 addi
 andi
+slli
+
