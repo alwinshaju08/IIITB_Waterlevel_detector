@@ -276,7 +276,7 @@ slli
 
 Spike results:
 
-Here i have done here without -march and -mabi but i checked it out in my friends laptop with -march and -mabi , it is still working for those commands : 
+Here i have done here without -march and -mabi(this commands not supportable in mac) but i checked it out in my friends laptop with -march and -mabi , it is still working for those commands : 
 
 when i am giving switch value as 1 and liquidsensor as 0 : it will enter loop and due to masking of input my input pins will be shown 0 and output onlyy buzzer is ON (0) while solenoid will remain open (1) i.e i am getting test cases as 8
 
