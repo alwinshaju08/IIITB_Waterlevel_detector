@@ -278,8 +278,8 @@ Spike results:
 
 Here i have done here without -march and -mabi but i checked it out in my friends laptop with -march and -mabi , it is still working for those commands : 
 
-<img width="682" alt="Screenshot 2023-10-24 at 8 00 27 PM" src="https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/d1cc084e-9231-497d-90ca-313b9339fa8b">
 
+when i am giving switch value as 1 and liquidsensor as 1 : it will enter loop and due to masking of input my input pins will be shown 0 and output onlyy buzzer is ON (1) while solenoid will close (0) i.e i am getting test cases as 4
 
 <img width="638" alt="Screenshot 2023-10-24 at 7 59 51 PM" src="https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/fff57d77-3a7e-4c58-a607-3de64a0c9eee">
 
