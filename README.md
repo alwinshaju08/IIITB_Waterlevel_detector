@@ -86,14 +86,14 @@ int main() {
                 // Simulate activating the buzzer and solenoid (replace with actual control)
                 // digital_write(buzzerPin, 1);
                 // digital_write(solenoid, 0);
-                // printf("Buzzer and solenoid are ON\n");
+                // printf("Buzzer ON and solenoid are Off\n");
                 buzzerPin = 1;
                 solenoid = 0;
             } else {
                 // Simulate deactivating the buzzer and solenoid (replace with actual control)
                 // digital_write(buzzerPin, 0);
                 // digital_write(solenoid, 1);
-                // printf("Buzzer and solenoid are OFF\n");
+                // printf("Buzzer OFF and solenoid are ON\n");
                 buzzerPin = 0;
                 solenoid = 1;
             }
