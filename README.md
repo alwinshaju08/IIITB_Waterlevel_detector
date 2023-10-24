@@ -299,6 +299,20 @@ when i am giving swicth value as 0 and liquidsensor as 0 : it is stopping in the
 
 # Functional Verification : 
 
+Here in First example when switch value and sensor_pin both are zero then there is no output as system is not working state now ,write done basically means uart has done transmitting data
+
+![Screenshot from 2023-10-25 01-57-14](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/1a3a09c0-3d48-458c-a8d5-0df39dcf0ddb)
+
+Here in 2nd example when switch value is 1 and sensor_pin both is 0 then there system is working and solenoid valve is open so that water flows but the buzzer wont buzz that why that bit will be in 0 while solenoid will be High '1' and here solenoid is 2nd bit while buzzer pin is 1st bit .Thats why we are getting ```10```
+
+
+![Screenshot from 2023-10-25 01-53-14](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/3ddf9098-98fc-4f6b-9c3d-b5f43958fa8c)
+
+Here in 3rd example when switch value is 1 and sensor_pin both is also 1 then the system is done filling water in the bottle and solenoid valve will close that is it will become 0 while buzzer will start buzzing that is it will become High '1' and here solenoid is 2nd bit while buzzer pin is 1st bit .Thats why we are getting ```01```
+
+
+![Screenshot from 2023-10-25 01-47-27](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/7275355d-c5a3-47ff-b65f-3aa414073ff3)
+
 
 
 
