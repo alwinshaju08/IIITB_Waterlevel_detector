@@ -277,7 +277,7 @@ slli
 Spike results:
 
 ```
-riscv64-unknown-elf-gcc -march=rv64i -mabi=lp64 -ffreestanding -o out gas_leak.c
+riscv64-unknown-elf-gcc -march=rv64i -mabi=lp64 -ffreestanding -o out water_level.c
 spike pk out
 
 ```
