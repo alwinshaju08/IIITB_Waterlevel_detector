@@ -57,6 +57,7 @@ int main() {
     solenoid_reg = solenoid * 8; // Calculate the register for the solenoid
 
     asm volatile(
+        "and x30, x30, 0xFFFFFFF3\n\t"
         "or x30, x30, %0\n\t"
         "or x30, x30, %1\n\t"
         :
@@ -67,7 +68,7 @@ int main() {
     while (1) {
         
         asm volatile(
-            "andi %0, x30, 1\n\t" 
+            "andi %0, x30, 1\n\t" // Assuming switch is connected to bit 3 (8 in binary)
             : "=r"(switchValue)
             :
             :
@@ -103,6 +104,7 @@ int main() {
             solenoid_reg = solenoid * 8;
 
             asm volatile(
+                "and x30, x30, 0xFFFFFFF3\n\t"
                 "or x30, x30, %0\n\t"
                 "or x30, x30, %1\n\t"
                 :
