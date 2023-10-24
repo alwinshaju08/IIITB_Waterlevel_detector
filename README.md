@@ -284,7 +284,10 @@ Here i have done here without -march and -mabi but i checked it out in my friend
 <img width="638" alt="Screenshot 2023-10-24 at 7 59 51 PM" src="https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/fff57d77-3a7e-4c58-a607-3de64a0c9eee">
 
 
-<img width="682" alt="Screenshot 2023-10-24 at 7 59 01 PM" src="https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/c0f91c83-c6e9-4426-a2b9-55ce2ec9015f">
+when i am giving swicth value as 0 and liquidsensor as 0 : it is stopping in the test case 1 itself as it won't enter loop
+
+
+<img width="682" alt="Screenshot 2023-10-24 at 8 00 27 PM" src="https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/a7da28fb-9b60-4176-a9ca-557dd898a587">
 
 
 
