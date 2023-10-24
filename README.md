@@ -317,9 +317,11 @@ Here in 3rd example when switch value is 1 and sensor_pin both is also 1 then th
 
 
 ## Word of Thanks
+
 I sciencerly thank **Mr. Kunal Gosh**(Founder/**VSD**) for helping me out to complete this flow smoothly.
 
 ## Acknowledgement
+
 - Kunal Ghosh, VSD Corp. Pvt. Ltd.
 - Skywater Foundry
 - Chatgpt
@@ -329,8 +331,8 @@ I sciencerly thank **Mr. Kunal Gosh**(Founder/**VSD**) for helping me out to com
 - Bhargav DV,MS
 - Emil Jayanth Lal, IIITB
 - Shant Rakshit,IIIT B
+- Sushma R,IIIT B
 - N sai Sampath,IIIT B
-  
   
 ## Reference 
 
