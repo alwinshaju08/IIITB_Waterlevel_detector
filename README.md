@@ -67,7 +67,7 @@ int main() {
     while (1) {
         
         asm volatile(
-            "andi %0, x30, 1\n\t" // Assuming switch is connected to bit 3 (8 in binary)
+            "andi %0, x30, 1\n\t" 
             : "=r"(switchValue)
             :
             :
