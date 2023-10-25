@@ -55,7 +55,7 @@ int main() {
     int liquidSensorPin;
     int buzzerPin = 0;
     int buzzer_reg;
-    int solenoid ;
+    int solenoid = 0  ;
     int solenoid_reg; // Register for the solenoid
     int switchValue;  // Input switch pin
     int mask1 = 0xFFFFFFF3;
