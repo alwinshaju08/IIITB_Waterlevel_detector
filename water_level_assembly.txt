@@ -5,51 +5,53 @@ out:     file format elf32-littleriscv
 Disassembly of section .text:
 
 00010054 <main>:
+
    10054:	fd010113          	addi	sp,sp,-48
    10058:	02812623          	sw	s0,44(sp)
    1005c:	03010413          	addi	s0,sp,48
    10060:	fe042623          	sw	zero,-20(s0)
-   10064:	ff300793          	li	a5,-13
-   10068:	fef42223          	sw	a5,-28(s0)
-   1006c:	fec42783          	lw	a5,-20(s0)
-   10070:	00279793          	slli	a5,a5,0x2
-   10074:	fef42023          	sw	a5,-32(s0)
-   10078:	fdc42783          	lw	a5,-36(s0)
-   1007c:	00379793          	slli	a5,a5,0x3
-   10080:	fcf42c23          	sw	a5,-40(s0)
-   10084:	fe042783          	lw	a5,-32(s0)
-   10088:	fd842703          	lw	a4,-40(s0)
-   1008c:	fe442683          	lw	a3,-28(s0)
-   10090:	00df7f33          	and	t5,t5,a3
-   10094:	00ff6f33          	or	t5,t5,a5
-   10098:	00ef6f33          	or	t5,t5,a4
-   1009c:	001f7793          	andi	a5,t5,1
-   100a0:	fcf42a23          	sw	a5,-44(s0)
-   100a4:	00100793          	li	a5,1
-   100a8:	fef42423          	sw	a5,-24(s0)
-   100ac:	fd442783          	lw	a5,-44(s0)
-   100b0:	fe0786e3          	beqz	a5,1009c <main+0x48>
-   100b4:	002f7793          	andi	a5,t5,2
-   100b8:	fcf42823          	sw	a5,-48(s0)
-   100bc:	fd042783          	lw	a5,-48(s0)
-   100c0:	00078a63          	beqz	a5,100d4 <main+0x80>
-   100c4:	00100793          	li	a5,1
-   100c8:	fef42623          	sw	a5,-20(s0)
-   100cc:	fe042423          	sw	zero,-24(s0)
-   100d0:	0100006f          	j	100e0 <main+0x8c>
-   100d4:	fe042623          	sw	zero,-20(s0)
-   100d8:	00100793          	li	a5,1
-   100dc:	fef42423          	sw	a5,-24(s0)
-   100e0:	fec42783          	lw	a5,-20(s0)
-   100e4:	00279793          	slli	a5,a5,0x2
-   100e8:	fef42023          	sw	a5,-32(s0)
-   100ec:	fe842783          	lw	a5,-24(s0)
-   100f0:	00379793          	slli	a5,a5,0x3
-   100f4:	fcf42c23          	sw	a5,-40(s0)
-   100f8:	fe042783          	lw	a5,-32(s0)
-   100fc:	fd842703          	lw	a4,-40(s0)
-   10100:	fe442683          	lw	a3,-28(s0)
-   10104:	00df7f33          	and	t5,t5,a3
-   10108:	00ff6f33          	or	t5,t5,a5
-   1010c:	00ef6f33          	or	t5,t5,a4
-   10110:	f8dff06f          	j	1009c <main+0x48>
+   10064:	fe042223          	sw	zero,-28(s0)
+   10068:	ff300793          	li	a5,-13
+   1006c:	fef42023          	sw	a5,-32(s0)
+   10070:	fec42783          	lw	a5,-20(s0)
+   10074:	00279793          	slli	a5,a5,0x2
+   10078:	fcf42e23          	sw	a5,-36(s0)
+   1007c:	fe442783          	lw	a5,-28(s0)
+   10080:	00379793          	slli	a5,a5,0x3
+   10084:	fcf42c23          	sw	a5,-40(s0)
+   10088:	fdc42783          	lw	a5,-36(s0)
+   1008c:	fd842703          	lw	a4,-40(s0)
+   10090:	fe042683          	lw	a3,-32(s0)
+   10094:	00df7f33          	and	t5,t5,a3
+   10098:	00ff6f33          	or	t5,t5,a5
+   1009c:	00ef6f33          	or	t5,t5,a4
+   100a0:	001f7793          	andi	a5,t5,1
+   100a4:	fcf42a23          	sw	a5,-44(s0)
+   100a8:	00100793          	li	a5,1
+   100ac:	fef42423          	sw	a5,-24(s0)
+   100b0:	fd442783          	lw	a5,-44(s0)
+   100b4:	fe0786e3          	beqz	a5,100a0 <main+0x4c>
+   100b8:	002f7793          	andi	a5,t5,2
+   100bc:	fcf42823          	sw	a5,-48(s0)
+   100c0:	fd042783          	lw	a5,-48(s0)
+   100c4:	00078a63          	beqz	a5,100d8 <main+0x84>
+   100c8:	00100793          	li	a5,1
+   100cc:	fef42623          	sw	a5,-20(s0)
+   100d0:	fe042423          	sw	zero,-24(s0)
+   100d4:	0100006f          	j	100e4 <main+0x90>
+   100d8:	fe042623          	sw	zero,-20(s0)
+   100dc:	00100793          	li	a5,1
+   100e0:	fef42423          	sw	a5,-24(s0)
+   100e4:	fec42783          	lw	a5,-20(s0)
+   100e8:	00279793          	slli	a5,a5,0x2
+   100ec:	fcf42e23          	sw	a5,-36(s0)
+   100f0:	fe842783          	lw	a5,-24(s0)
+   100f4:	00379793          	slli	a5,a5,0x3
+   100f8:	fcf42c23          	sw	a5,-40(s0)
+   100fc:	fdc42783          	lw	a5,-36(s0)
+   10100:	fd842703          	lw	a4,-40(s0)
+   10104:	fe042683          	lw	a3,-32(s0)
+   10108:	00df7f33          	and	t5,t5,a3
+   1010c:	00ff6f33          	or	t5,t5,a5
+   10110:	00ef6f33          	or	t5,t5,a4
+   10114:	f8dff06f          	j	100a0 <main+0x4c>
