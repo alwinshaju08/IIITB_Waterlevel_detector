@@ -329,7 +329,6 @@ I sciencerly thank **Mr. Kunal Gosh**(Founder/**VSD**) for helping me out to com
 - Bhargav DV,MS
 - Emil Jayanth Lal, IIITB
 - Shant Rakshit,IIIT B
-- Sushma R,IIIT B
 - N sai Sampath,IIIT B
   
 ## Reference 
