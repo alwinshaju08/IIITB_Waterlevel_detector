@@ -315,13 +315,21 @@ Here in 3rd example when switch value is 1 and sensor_pin both is also 1 then th
 
 # Instruction verification 
 
-![Screenshot from 2023-10-27 09-53-06](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/0b0411e4-0d4c-411c-a215-99f83b91085c)
+So , Here Signal43,Signal45,Signal58 all are basically registers , Signal43 contains the hardwired wire zero registers(x0), Signal45 contains stack pointer(x2)register, Signal58 is the a5 register.
 
+Here  in this first image we are checking whether it is doing the first assembly instruction ``` addi	sp,sp,-48 ``` as u can default value of sp is ```FF``` after that it becomes ``` CF ```which is -48 in hexadecimal.
+
+![Screenshot from 2023-10-26 21-40-31](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/5e76f387-8a00-43b6-96e5-7e39ea2d7afd)
+
+Here  in this 2nd image we are checking whether it is doing the first assembly instruction ``` li   a5,-13``` as u can default value of a5 regitser is ```00``` after that it becomes ``` FFFFFFF3 ```which is -13 in hexadecimal.
 
 ![Screenshot from 2023-10-26 21-44-59](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/29f3c3d8-0d33-4046-b145-0718d469c5b1)
 
+Here  in this 3nd image we are checking whether it is doing the first assembly instruction ``` li   a5,1``` as u can default value of a5 regitser is ```00``` after that it becomes ``` 00000001 ```which is 1 in hexadecimal.
 
-![Screenshot from 2023-10-26 21-40-31](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/5e76f387-8a00-43b6-96e5-7e39ea2d7afd)
+![Screenshot from 2023-10-27 09-53-06](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/0b0411e4-0d4c-411c-a215-99f83b91085c)
+
+Here in this instruction u can also verify it by viewing instruction corresponding to calling of this instructions.(ID_instructions)
 
 
 ## Word of Thanks
