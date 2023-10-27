@@ -313,6 +313,16 @@ Here in 3rd example when switch value is 1 and sensor_pin both is also 1 then th
 
 ![Screenshot from 2023-10-26 18-21-36](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/82074ec4-930f-4999-948a-cfe1b112744f)
 
+# Instruction verification 
+
+![Screenshot from 2023-10-27 09-53-06](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/0b0411e4-0d4c-411c-a215-99f83b91085c)
+
+
+![Screenshot from 2023-10-26 21-44-59](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/29f3c3d8-0d33-4046-b145-0718d469c5b1)
+
+
+![Screenshot from 2023-10-26 21-40-31](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/5e76f387-8a00-43b6-96e5-7e39ea2d7afd)
+
 
 ## Word of Thanks
 
