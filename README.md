@@ -340,9 +340,9 @@ I sciencerly thank **Mr. Kunal Gosh**(Founder/**VSD**) for helping me out to com
 
 - Kunal Ghosh, VSD Corp. Pvt. Ltd.
 - Skywater Foundry
-- Kanish R,Colleague,IIIT B
-- Pruthvi parate,MS
-- Bhargav DV,MS
+- Kanish R,IIIT B
+- Pruthvi parate,MS IIITB
+- Bhargav DV,MS IIIT B
 - Emil Jayanth Lal, IIITB
 - Shant Rakshit,IIIT B
 - Sushma R,IIIT B
