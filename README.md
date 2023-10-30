@@ -331,6 +331,57 @@ Here  in this 3nd image we are checking whether it is doing the first assembly i
 
 Here in this instruction u can also verify it by viewing instruction corresponding to calling of this instructions.(ID_instructions)
 
+# Synthesis
+
+Synthesis transforms the simple RTL design into a gate-level netlist with all the constraints as specified by the designer. In simple language, Synthesis is a process that converts the abstract form of design to a properly implemented chip in terms of logic gates.
+
+Synthesis takes place in multiple steps:
+
+- Converting RTL into simple logic gates.
+- Mapping those gates to actual technology-dependent logic gates available in the technology libraries.
+- Optimizing the mapped netlist keeping the constraints set by the designer intact.
+
+# Gate Level Simulation :
+
+GLS is generating the simulation output by running test bench with netlist file generated from synthesis as design under test. Netlist is logically same as RTL code, therefore, same test bench can be used for it.We perform this to verify logical correctness of the design after synthesizing it. Also ensuring the timing of the design is met. Folllowing are the commands to we need to convert Rtl code to netlist in yosys for that commands are :
+
+```
+read_liberty -lib sky130_fd_sc_hd__tt_025C_1v80_256.lib 
+read_verilog processor.v 
+synth -top wrapper
+dfflibmap -liberty sky130_fd_sc_hd__tt_025C_1v80_256.lib 
+abc -liberty sky130_fd_sc_hd__tt_025C_1v80_256.lib
+write_verilog synth_processor_test.v
+
+```
+Folllowing are the commands to run the GLS simulation:
+
+```
+iverilog -o test synth_processor_test.v testbench.v sky130_sram_1kbyte_1rw1r_32x256_8.v sky130_fd_sc_hd.v primitives.v
+
+```
+
+The gtkwave output for the netlist should match the output waveform for the RTL design file. As netlist and design code have same set of inputs and outputs, we can use the same testbench and compare the waveforms.
+
+The output waveform of the synthesized netlist given below: 
+
+Example 1:
+
+![Screenshot from 2023-10-30 23-20-07](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/b0071b12-ca38-4f2c-8242-336ee5601a1c)
+
+Example 2:
+
+![Screenshot from 2023-10-30 23-20-54](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/5a5f4fcf-e90e-4cc7-9316-cef7d08000e2)
+
+Example 3:
+
+![Screenshot from 2023-10-30 23-21-52](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/45dbc5e5-cdf5-4026-899e-72cdf2048a16)
+
+
+**Highlighted the wrapper module after netlist created**
+
+![Screenshot from 2023-10-30 23-29-52](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/305763b0-550f-4bf6-85e8-0017c3407c05)
+
 
 ## Word of Thanks
 
