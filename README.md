@@ -313,6 +313,11 @@ Here in 3rd example when switch value is 1 and sensor_pin both is also 1 then th
 
 ![Screenshot from 2023-10-26 18-21-36](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/82074ec4-930f-4999-948a-cfe1b112744f)
 
+Here we can see that output is getting high when instruction is becoming *00ef6f33        |  	or	t5,t5,a4*
+
+![Screenshot from 2023-10-31 18-44-18](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/fabb2723-36b0-4ed8-b363-daff983f2977)
+
+
 # Instruction verification 
 
 So , Here Signal43,Signal45,Signal58 all are basically registers , Signal43 contains the hardwired wire zero registers(x0), Signal45 contains stack pointer(x2)register, Signal58 is the a5 register.
