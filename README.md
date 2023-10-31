@@ -321,11 +321,11 @@ Here  in this first image we are checking whether it is doing the first assembly
 
 ![Screenshot from 2023-10-26 21-40-31](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/5e76f387-8a00-43b6-96e5-7e39ea2d7afd)
 
-Here  in this 2nd image we are checking whether it is doing the first assembly instruction ``` li   a5,-13``` as u can default value of a5 regitser is ```00``` after that it becomes ``` FFFFFFF3 ```which is -13 in hexadecimal.Here input instruction is *FE042223*  , Here output instruction is *FF300793* 
+Here  in this 2nd image we are checking whether it is doing the first assembly instruction ``` li   a5,-13``` as u can default value of a5 regitser is ```00``` after that it becomes ``` FFFFFFF3 ```which is -13 in hexadecimal. Here output instruction is *FF300793* 
 
 ![Screenshot from 2023-10-26 21-44-59](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/29f3c3d8-0d33-4046-b145-0718d469c5b1)
 
-Here  in this 3nd image we are checking whether it is doing the first assembly instruction ``` li   a5,1``` as u can default value of a5 regitser is ```00``` after that it becomes ``` 00000001 ```which is 1 in hexadecimal.Here input instruction is *FCF42A23*  , Here output instruction is *00100793*
+Here  in this 3nd image we are checking whether it is doing the first assembly instruction ``` li   a5,1``` as u can default value of a5 regitser is ```00``` after that it becomes ``` 00000001 ```which is 1 in hexadecimal. Here output instruction is *00100793*
 
 ![Screenshot from 2023-10-27 09-53-06](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/0b0411e4-0d4c-411c-a215-99f83b91085c)
 
