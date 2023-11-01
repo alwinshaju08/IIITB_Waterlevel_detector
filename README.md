@@ -407,7 +407,7 @@ I sciencerly thank **Mr. Kunal Gosh**(Founder/**VSD**) for helping me out to com
 - Shant Rakshit,IIIT B
 - Sushma R,IIIT B
 - N sai Sampath,IIIT B
-- Mayank Kabra,IIIT B
+- Mayank Kabra,Founder,Chipcron Pvt.Ltd.
   
 ## Reference 
 
