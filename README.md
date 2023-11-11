@@ -391,6 +391,39 @@ Example 3:
 
 ![Screenshot from 2023-10-30 23-29-52](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/305763b0-550f-4bf6-85e8-0017c3407c05)
 
+# PHYSICAL DESIGN
+
+**OVERVIEW OF PHYSICAL DESIGN**
+
+Place and Route (PnR) is the core of any ASIC implementation and Openlane flow integrates into it several key open source tools which perform each of the respective stages of PnR. Below are the stages and the respective tools that are called by openlane for the functionalities as described:
+
+![image](https://user-images.githubusercontent.com/110079648/187492890-1c91bb6d-596e-47da-b4c6-592d25bbec10.png)
+
+Below are the stages and the respective tools that are called by openlane for the functionalities as described:
+
+    - Synthesis
+        Generating gate-level netlist (yosys).
+        Performing cell mapping (abc).
+        Performing pre-layout STA (OpenSTA).
+    - Floorplanning
+        Defining the core area for the macro as well as the cell sites and the tracks (init_fp).
+        Placing the macro input and output ports (ioplacer).
+        Generating the power distribution network (pdn).
+    - Placement
+        Performing global placement (RePLace).
+        Perfroming detailed placement to legalize the globally placed components (OpenDP).
+   - Clock Tree Synthesis (CTS)
+        Synthesizing the clock tree (TritonCTS).
+   - Routing
+        Performing global routing to generate a guide file for the detailed router (FastRoute).
+        Performing detailed routing (TritonRoute)
+
+    - GDSII Generation
+        Streaming out the final GDSII layout file from the routed def (Magic).
+
+7.2 Openlane
+
+
 
 ## Word of Thanks
 
