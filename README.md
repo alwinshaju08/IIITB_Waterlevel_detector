@@ -421,9 +421,11 @@ Below are the stages and the respective tools that are called by openlane for th
 - GDSII Generation
         Streaming out the final GDSII layout file from the routed def (Magic).
 
-7.2 Openlane
+## 7.2 Openlane
 
+OpenLane is an automated RTL to GDSII flow based on several components including OpenROAD, Yosys, Magic, Netgen, CVC, SPEF-Extractor, CU-GR, Klayout and a number of custom scripts for design exploration and optimization. The flow performs full ASIC implementation steps from RTL all the way down to GDSII.
 
+More about Openlane at : https://github.com/The-OpenROAD-Project/OpenLane
 
 ## Word of Thanks
 
