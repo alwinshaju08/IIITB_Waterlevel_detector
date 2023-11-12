@@ -552,6 +552,27 @@ run_cts
 
 ![Screenshot from 2023-11-13 00-11-14](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/0a7fc0b6-0a1e-42b9-8cc0-d9185d32fec8)
 
+# Routing
+
+Implements the interconnect system between standard cells using the remaining available metal layers after CTS and PDN generation. The routing is performed on routing grids to ensure minimal DRC errors.
+
+- 1. OpenLANE uses the TritonRoute tool for routing. There are 2 stages of routing:
+
+* Global routing: Routing region is divided into rectangle grids which are represented as course 3D routes (Fastroute tool).
+* Detailed routing: Finer grids and routing guides used to implement physical wiring (TritonRoute tool).
+
+- Features of TritonRoute:
+
+* Honouring pre-processed route guides
+* Assumes that each net satisfies inter guide connectivity
+* Uses MILP based panel routing scheme
+* Intra-layer parallel and inter-layer sequential routing framework
+
+Run the following command to run the routing
+
+```
+% run_routing
+```
 
 
 ## Word of Thanks
