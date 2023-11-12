@@ -427,6 +427,22 @@ OpenLane is an automated RTL to GDSII flow based on several components including
 
 More about Openlane at : https://github.com/The-OpenROAD-Project/OpenLane
 
+# MAGIC
+
+Magic is a venerable VLSI layout tool, written in the 1980's at Berkeley by John Ousterhout, now famous primarily for writing the scripting interpreter language Tcl. Due largely in part to its liberal Berkeley open-source license, magic has remained popular with universities and small companies. The open-source license has allowed VLSI engineers with a bent toward programming to implement clever ideas and help magic stay abreast of fabrication technology. However, it is the well thought-out core algorithms which lend to magic the greatest part of its popularity. Magic is widely cited as being the easiest tool to use for circuit layout, even for people who ultimately rely on commercial tools for their product design flow.
+
+More about magic at http://opencircuitdesign.com/magic/index.html
+
+# Preparing the Design
+Preparing the design and including the lef files: The commands to prepare the design and overwite in a existing run folder the reports and results along with the command to include the lef files is given below:
+```
+make mount
+%./flow.tcl -interactive
+% package require openlane 0.9
+% prep -design project -verbose 99
+
+```
+
 ## Word of Thanks
 
 I sciencerly thank **Mr. Kunal Gosh**(Founder/**VSD**) for helping me out to complete this flow smoothly.
