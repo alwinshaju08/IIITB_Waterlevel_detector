@@ -536,9 +536,22 @@ run_cts
 ```
 ![Screenshot from 2023-11-12 23-45-56](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/ff138649-ba40-4f59-b815-c824d3234fd1)
 
-## Timing reports
+## Timing Reports
 
-![Screenshot from 2023-11-13 00-06-27](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/8f3f7237-2540-414b-b700-365f37ba0460)
+![Screenshot from 2023-11-13 00-12-14](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/d2ef5ec8-a7a2-4d41-8bd7-7b0228f613ba)
+
+## AREA Reports
+
+![Screenshot from 2023-11-13 00-11-52](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/892ff0cd-bd78-4fe3-a61e-a9e1a786e853)
+
+## Skew Reports
+
+![Screenshot from 2023-11-13 00-11-36](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/e98914cf-9291-494d-ae47-7c7cd10f9360)
+
+## Power Reports
+
+![Screenshot from 2023-11-13 00-11-14](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/0a7fc0b6-0a1e-42b9-8cc0-d9185d32fec8)
+
 
 
 ## Word of Thanks
