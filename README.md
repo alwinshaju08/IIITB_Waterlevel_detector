@@ -594,6 +594,13 @@ magic -T /home/parallels/.volare/volare/sky130/versions/1341f54f5ce0c4955326297f
 ```
 #### layout after Routing
 
+![Screenshot from 2023-11-12 03-36-36](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/4e5325e2-5a9a-46ad-b0b1-5a3f8f17550e)
+
+![Screenshot from 2023-11-12 03-36-51](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/2454bcff-0547-40e6-8f5b-cb5f4c8bca1c)
+
+**Area of Design**
+
+![Screenshot from 2023-11-13 00-25-24](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/4b235681-4569-4e48-8917-ba00d6e4f140)
 
 ## Word of Thanks
 
