@@ -495,6 +495,38 @@ magic -T /home/parallels/.volare/volare/sky130/versions/1341f54f5ce0c4955326297f
 
 ![Screenshot from 2023-11-12 23-16-51](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/c99dcf26-d0bb-41e9-954c-49b495efa5c2)
 
+# Placement
+
+Place the standard cells on the floorplane rows, aligned with sites defined in the technology lef file. Placement is done in two steps: Global and Detailed. In Global placement tries to find optimal position for all cells but they may be overlapping and not aligned to rows, detailed placement takes the global placement and legalizes all of the placements trying to adhere to what the global placement wants.
+The next step in the OpenLANE ASIC flow is placement. The synthesized netlist is to be placed on the floorplan. Placement is perfomed in 2 stages:
+
+- Global Placement: It finds optimal position for all cells which may not be legal and cells may overlap. Optimization is done through reduction of half parameter wire length.
+
+- Detailed Placement: It alters the position of cells post global placement so as to legalise them.
+
+run the following command to run the placement
+
+```
+run_placement
+```
+Post placement: the design can be viewed on magic within results/placement directory. Run the follwing command in that directory:
+```
+magic -T /home/parallels/.volare/volare/sky130/versions/1341f54f5ce0c4955326297f235e4ace1eb6d419/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read wrapper.def &
+
+```
+![Screenshot from 2023-11-12 23-26-08](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/3a52e0b1-e527-499d-93c6-3e3fb630cbb2)
+
+# CTS
+
+Clock tree synteshsis is used to create the clock distribution network that is used to deliver the clock to all sequential elements. The main goal is to create a network with minimal skew across the chip. H-trees are a common network topology that is used to achieve this goal.
+
+The purpose of building a clock tree is enable the clock input to reach every element and to ensure a zero clock skew. H-tree is a common methodology followed in CTS.
+
+Run the following command to perform CTS
+```
+run_cts
+
+```
 
 ## Word of Thanks
 
