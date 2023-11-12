@@ -615,6 +615,10 @@ magic -T /home/parallels/.volare/volare/sky130/versions/1341f54f5ce0c4955326297f
 
 ![Screenshot from 2023-11-13 00-36-34](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/49387bf6-c2d2-4864-a88b-b23d4c7523c3)
 
+**Here drc violation is zero:**
+
+![violation0](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/f34b15cd-752b-4d0d-9062-b5d5aa587773)
+
 ## Performance Calculation
 
 Given Clock period Json file is 50ns , setup slack we got after routing is 13.21ns
@@ -628,6 +632,38 @@ Max Performance =  ------------------------
 ```
 Max Performance = 0.0271 Ghz
 ```
+### Extras
+
+![Screenshot from 2023-11-13 00-32-21](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/a5ab2ea7-a202-4a6a-a60d-df5d9101b466)
+
+# OpenLane Interactive Flow:
+```
+cd Desktop/OpenLane/ 
+
+./flow.tcl -interactive
+package require openlane 0.9
+prep -design picorv32a
+run_synthesis
+run_floorplan
+run_placement
+run_cts
+gen_pdn
+run_routing
+run_magic
+run_magic_spice_export
+run_magic_drc
+run_antenna_check
+
+```
+# OpenLane Non-Interactive Flow:
+
+```
+cd Desktop/OpenLane 
+make mount
+./flow.tcl -design project
+
+```
+
 
 ## Word of Thanks
 
