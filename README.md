@@ -615,6 +615,19 @@ magic -T /home/parallels/.volare/volare/sky130/versions/1341f54f5ce0c4955326297f
 
 ![Screenshot from 2023-11-13 00-36-34](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/49387bf6-c2d2-4864-a88b-b23d4c7523c3)
 
+## Performance Calculation
+
+Given Clock period Json file is 50ns , setup slack we got after routing is 13.21ns
+
+```
+                              1
+Max Performance =  ------------------------
+                     clock period - slack(setup)
+```
+
+```
+Max Performance = 0.0271 Ghz
+```
 
 ## Word of Thanks
 
