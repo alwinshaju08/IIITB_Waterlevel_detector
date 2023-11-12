@@ -463,7 +463,8 @@ run_synthesis
 
 **Statistics after synthesis**
 
-![Screenshot from 2023-11-12 21-57-12](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/77a28869-202a-4429-9063-87bda63e7821)
+![Screenshot from 2023-11-12 23-48-57](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/03422281-d55f-40d2-b9a1-7e46d313d6d3)
+
 
 # Floorplan
 
