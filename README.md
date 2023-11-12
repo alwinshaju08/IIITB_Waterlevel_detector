@@ -514,6 +514,8 @@ run the following command to run the placement
 ```
 run_placement
 ```
+![Screenshot from 2023-11-12 23-58-10](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/de05a2d2-96d3-43a4-a5f6-415729c407bf)
+
 Post placement: the design can be viewed on magic within results/placement directory. Run the follwing command in that directory:
 ```
 magic -T /home/parallels/.volare/volare/sky130/versions/1341f54f5ce0c4955326297f235e4ace1eb6d419/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read wrapper.def &
