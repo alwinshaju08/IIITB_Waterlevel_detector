@@ -536,6 +536,10 @@ run_cts
 ```
 ![Screenshot from 2023-11-12 23-45-56](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/ff138649-ba40-4f59-b815-c824d3234fd1)
 
+## Timing reports
+
+![Screenshot from 2023-11-13 00-06-27](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/8f3f7237-2540-414b-b700-365f37ba0460)
+
 
 ## Word of Thanks
 
