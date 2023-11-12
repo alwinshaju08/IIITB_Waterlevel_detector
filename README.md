@@ -2,7 +2,7 @@
 
 This github repository summarizes the progress made in the ASIC class for the riscv_project. Quick links:
 
-- [Day-0-Introduction to Project](#day-0-Introduction-to-Project)
+- [-Introduction to Project](#-Introduction-to-Project)
   
 - [Word of Thanks](#Word-of-Thanks)
 
