@@ -621,7 +621,7 @@ magic -T /home/parallels/.volare/volare/sky130/versions/1341f54f5ce0c4955326297f
 
 ## Performance Calculation
 
-Given Clock period Json file is 50ns , setup slack we got after routing is 13.21ns
+Given a Clock period of 50ns in Json file , setup slack we got after routing is 13.21ns
 
 ```
                               1
