@@ -442,6 +442,59 @@ make mount
 % prep -design project -verbose 99
 
 ```
+![Screenshot from 2023-11-12 21-55-03](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/c173b146-05bf-44e9-8c3d-c87b64bcd9fd)
+
+## synthesis 
+
+Logic synthesis uses the RTL netlist to perform HDL technology mapping. The synthesis process is normally performed in two major steps:
+
+    GTECH Mapping – Consists of mapping the HDL netlist to generic gates what are used to perform logical optimization based on AIGERs and other topologies created from the generic mapped netlist.
+
+    Technology Mapping – Consists of mapping the post-optimized GTECH netlist to standard cells described in the PDK
+
+To synthesize the code run the following command
+
+```
+run_synthesis
+
+```
+**Statistics after synthesis**
+
+![Screenshot from 2023-11-12 21-57-12](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/77a28869-202a-4429-9063-87bda63e7821)
+
+# Floorplan
+
+Goal is to plan the silicon area and create a robust power distribution network (PDN) to power each of the individual components of the synthesized netlist. In addition, macro placement and blockages must be defined before placement occurs to ensure a legalized GDS file. In power planning we create the ring which is connected to the pads which brings power around the edges of the chip. We also include power straps to bring power to the middle of the chip using higher metal layers which reduces IR drop and electro-migration problem.
+
+Floorplan envrionment variables or switches:
+
+**FP_CORE_UTIL** - floorplan core utilisation, **FP_ASPECT_RATIO** - floorplan aspect ratio ,**FP_CORE_MARGIN** - Core to die margin area ,**FP_IO_MODE** - defines pin configurations (1 = equidistant/0 = not equidistant), **FP_CORE_VMETAL** - vertical metal layer, **FP_CORE_HMETAL** - horizontal metal layer
+
+Note: Usually, vertical metal layer and horizontal metal layer values will be 1 more than that specified in the file
+
+Following command helps to run floorplan
+```
+% run_floorplan
+```
+![Screenshot from 2023-11-12 21-57-29](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/123dc99f-f45f-41f6-822f-dace7f17f035)
+
+- Post the floorplan run, a .def file will have been created within the results/floorplan directory. We may review floorplan files by checking the floorplan.tcl.
+- To view the floorplan: Magic is invoked after moving to the results/floorplan directory,then use the floowing command:
+  
+```
+magic -T /home/parallels/.volare/volare/sky130/versions/1341f54f5ce0c4955326297f235e4ace1eb6d419/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read wrapper.def &
+
+```
+![Screenshot from 2023-11-12 23-14-36](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/110af273-b79e-4cb0-8471-dbb89eb9a3d5)
+
+## Die area (post floor plan)
+
+![Screenshot from 2023-11-12 23-16-39](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/b94e94d7-1719-4976-abf4-a14b92ea4421)
+
+## Core area (post floor plan)
+
+![Screenshot from 2023-11-12 23-16-51](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/c99dcf26-d0bb-41e9-954c-49b495efa5c2)
+
 
 ## Word of Thanks
 
