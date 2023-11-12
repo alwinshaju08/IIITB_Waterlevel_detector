@@ -442,7 +442,8 @@ make mount
 % prep -design project -verbose 99
 
 ```
-![Screenshot from 2023-11-12 21-55-03](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/c173b146-05bf-44e9-8c3d-c87b64bcd9fd)
+![Screenshot from 2023-11-12 23-41-36](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/84b3ae77-455a-4625-a82c-0c67e69e2d6d)
+
 
 ## synthesis 
 
@@ -458,6 +459,8 @@ To synthesize the code run the following command
 run_synthesis
 
 ```
+![Screenshot from 2023-11-12 23-42-22](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/ca571f4d-7c76-4e98-82a3-a941958927b3)
+
 **Statistics after synthesis**
 
 ![Screenshot from 2023-11-12 21-57-12](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/77a28869-202a-4429-9063-87bda63e7821)
@@ -476,7 +479,8 @@ Following command helps to run floorplan
 ```
 % run_floorplan
 ```
-![Screenshot from 2023-11-12 21-57-29](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/123dc99f-f45f-41f6-822f-dace7f17f035)
+![Screenshot from 2023-11-12 23-42-39](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/34864a41-9b77-417a-8494-13fcbcab9ae3)
+
 
 - Post the floorplan run, a .def file will have been created within the results/floorplan directory. We may review floorplan files by checking the floorplan.tcl.
 - To view the floorplan: Magic is invoked after moving to the results/floorplan directory,then use the floowing command:
@@ -527,6 +531,8 @@ Run the following command to perform CTS
 run_cts
 
 ```
+![Screenshot from 2023-11-12 23-45-56](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/ff138649-ba40-4f59-b815-c824d3234fd1)
+
 
 ## Word of Thanks
 
