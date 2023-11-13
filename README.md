@@ -490,7 +490,8 @@ Following command helps to run floorplan
 magic -T /home/parallels/.volare/volare/sky130/versions/1341f54f5ce0c4955326297f235e4ace1eb6d419/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read wrapper.def &
 
 ```
-![Screenshot from 2023-11-12 23-14-36](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/110af273-b79e-4cb0-8471-dbb89eb9a3d5)
+![Screenshot from 2023-11-13 10-48-10](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/f68bdef4-b968-44ed-9cda-b6ad9f45931f)
+
 
 ## Die area (post floor plan)
 
