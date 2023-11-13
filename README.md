@@ -683,7 +683,6 @@ I sciencerly thank **Mr. Kunal Gosh**(Founder/**VSD**) for helping me out to com
 - Bhargav DV,MS IIIT B
 - Emil Jayanth Lal, IIITB
 - Shant Rakshit,IIIT B
-- Sushma R,IIIT B
 - N sai Sampath,IIIT B
 - Mayank Kabra,Founder,Chipcron Pvt.Ltd.
   
