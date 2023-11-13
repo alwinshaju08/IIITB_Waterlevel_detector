@@ -435,6 +435,10 @@ More about magic at http://opencircuitdesign.com/magic/index.html
 
 # Preparing the Design
 Preparing the design and including the lef files: The commands to prepare the design and overwite in a existing run folder the reports and results along with the command to include the lef files is given below:
+
+```
+sed -i's/max_transition   :0.04/max_transition   :0.75'*/*.lib
+```
 ```
 make mount
 %./flow.tcl -interactive
