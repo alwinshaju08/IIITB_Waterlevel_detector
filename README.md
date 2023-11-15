@@ -647,7 +647,7 @@ cd Desktop/OpenLane/
 
 ./flow.tcl -interactive
 package require openlane 0.9
-prep -design picorv32a
+prep -design project
 run_synthesis
 run_floorplan
 run_placement
