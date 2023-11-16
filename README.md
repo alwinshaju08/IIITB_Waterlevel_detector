@@ -437,7 +437,7 @@ More about magic at http://opencircuitdesign.com/magic/index.html
 Preparing the design and including the lef files: The commands to prepare the design and overwite in a existing run folder the reports and results along with the command to include the lef files is given below:
 
 ```
-sed -i's/max_transition   :0.04/max_transition   :0.75'*/*.lib
+sed -i's/max_transition   :0.04/max_transition   :0.75/g'*/*.lib
 ```
 ```
 make mount
@@ -683,6 +683,7 @@ I sciencerly thank **Mr. Kunal Gosh**(Founder/**VSD**) for helping me out to com
 - Bhargav DV,MS IIIT B
 - Emil Jayanth Lal, IIITB
 - Shant Rakshit,IIIT B
+- Sushma R,IIIT B
 - N sai Sampath,IIIT B
 - Mayank Kabra,Founder,Chipcron Pvt.Ltd.
   
