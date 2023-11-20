@@ -543,6 +543,10 @@ run_cts
 
 ## Timing Reports
 
+![Screenshot from 2023-11-20 12-59-14](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/58c73750-259b-40aa-a4a8-71d095bc8572)
+
+![Screenshot from 2023-11-20 12-59-22](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/e7e22e72-262e-4df5-ac2d-b432869d8a5e)
+
 ![Screenshot from 2023-11-13 00-12-14](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/d2ef5ec8-a7a2-4d41-8bd7-7b0228f613ba)
 
 ## AREA Reports
