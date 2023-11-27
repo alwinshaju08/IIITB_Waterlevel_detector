@@ -86,7 +86,7 @@ int main() {
     {
         
         asm volatile(
-            "andi %0, x30, 1\n\t" // Assuming switch is connected to bit 3 (8 in binary)
+            "andi %0, x30, 1\n\t" // Assuming switch is connected to bit 0 
             : "=r"(switchValue)
             :
             :
@@ -109,7 +109,7 @@ int main() {
             // Simulate activating the buzzer and solenoid (replace with actual control)
             asm volatile(
                 "andi %0, x30, 2\n\t"
-                : "=r"(liquidSensorPin)
+                : "=r"(liquidSensorPin) // Assuming sensorpin is connected to bit 1 
                 :
                 :
             );
@@ -158,8 +158,8 @@ int main() {
 
             asm volatile(
                 "and x30, x30, %2\n\t"
-                "or x30, x30, %0\n\t"
-                "or x30, x30, %1\n\t"
+                "or x30, x30, %0\n\t" // Assuming buzzer is connected to bit 2 
+                "or x30, x30, %1\n\t" // Assuming solenoid is connected to bit 3 
                 :
                 : "r"(buzzer_reg), "r"(solenoid_reg),"r"(mask1)
                 : "x30"
