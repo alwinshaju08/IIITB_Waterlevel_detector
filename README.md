@@ -185,7 +185,7 @@ int main() {
 ```
 # Register architecture of x30 for GPIOs
 
-![GPIO](https://github.com/alwinshaju08/IIITB_Waterlevel_detector/assets/69166205/b9fdf3f3-d305-4e51-bd7e-dc8bcd8802f8)
+
 
 
 # Spike results:
